@@ -1,6 +1,6 @@
 # AI-Enabled Campus Event Management Platform - Frontend
 
-A professional React.js frontend application for the Campus Events Management Platform, built with TypeScript, Tailwind CSS, and React Router.
+A professional React.js frontend application for the Campus Events Management Platform, built with JavaScript, Vite, Tailwind CSS, and React Router.
 
 ## 🎨 Design System
 
@@ -26,15 +26,14 @@ campus-events-frontend/
 │   │   ├── student/          # Student portal pages (6 pages)
 │   │   ├── organizer/        # Organizer portal pages (6 pages)
 │   │   └── faculty/          # Faculty portal pages (3 pages)
-│   ├── types/                # TypeScript type definitions and route configurations
-│   ├── App.tsx               # Main application with routing
-│   ├── main.tsx              # Application entry point
+│   ├── App.jsx               # Main application with routing
+│   ├── main.jsx              # Application entry point
 │   └── index.css             # Global styles and Tailwind configuration
 ├── public/                   # Static assets
 ├── index.html                # HTML entry point
 ├── tailwind.config.js        # Tailwind CSS configuration
-├── tsconfig.json             # TypeScript configuration
-├── vite.config.ts            # Vite configuration
+├── jsconfig.json             # JavaScript configuration for VS Code IntelliSense
+├── vite.config.js            # Vite configuration
 └── package.json              # Project dependencies
 ```
 
@@ -122,11 +121,12 @@ npm run dev
 ## 🛠️ Built With
 
 - **React 18** - UI library
-- **TypeScript** - Type safety
-- **Tailwind CSS** - Utility-first CSS framework
+- **JavaScript (ES2020)** - Modern JavaScript
+- **Vite 5** - Fast build tool and dev server
+- **Tailwind CSS 3** - Utility-first CSS framework
 - **React Router v6** - Client-side routing
-- **Vite** - Build tool and dev server
 - **Lucide React** - Icon library
+- **PropTypes** - Runtime type checking
 
 ## 📦 Scripts
 
@@ -141,10 +141,11 @@ npm run dev
 ✅ **Role-Based Access** - Separate portals for Student, Organizer, and Faculty  
 ✅ **Professional Design** - Campus-themed color palette and typography  
 ✅ **Responsive Layout** - Mobile-first design with breakpoints  
-✅ **TypeScript Support** - Full type safety and IntelliSense  
-✅ **Reusable Components** - Modular UI component library  
+✅ **Modern JavaScript** - ES2020 features with Vite fast refresh  
+✅ **Reusable Components** - Modular UI component library with PropTypes  
 ✅ **No Mock Data** - Clean routing structure ready for API integration  
 ✅ **Accessibility** - Semantic HTML and ARIA labels  
+✅ **Fast Development** - Vite HMR for instant updates  
 
 ## 🔄 Next Steps (Not Implemented)
 
@@ -159,10 +160,11 @@ This is a frontend-only application focused on routing and navigation. The follo
 
 ## 📝 Notes
 
-- All TypeScript errors shown during development are expected before running `npm install`
 - The application uses path aliases (`@/*`) for clean imports
 - Design specifications follow the attached Figma design guide
 - Components are built with Tailwind CSS utility classes
+- PropTypes are used for component prop validation
+- All components are written in modern JavaScript (ES2020)
 
 ## 📄 License
 
@@ -174,4 +176,4 @@ For questions or issues, please contact the development team.
 
 ---
 
-**Built with ❤️ using React, TypeScript, and Tailwind CSS**
+**Built with ❤️ using React, JavaScript, Vite, and Tailwind CSS**
