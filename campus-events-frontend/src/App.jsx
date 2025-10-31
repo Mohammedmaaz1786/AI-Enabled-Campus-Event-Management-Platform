@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { ThemeProvider } from './contexts/ThemeContext';
 
 // Auth Pages
 import { Login, Register, ForgotPassword } from './pages/auth';
@@ -15,9 +16,10 @@ import * as Faculty from './pages/faculty';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        {/* Default Route */}
+    <ThemeProvider>
+      <BrowserRouter>
+        <Routes>
+          {/* Default Route */}
         <Route path="/" element={<Navigate to="/login" replace />} />
 
         {/* Authentication Routes */}
@@ -50,6 +52,7 @@ function App() {
         <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
     </BrowserRouter>
+    </ThemeProvider>
   );
 }
 

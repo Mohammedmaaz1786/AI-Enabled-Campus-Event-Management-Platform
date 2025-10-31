@@ -62,14 +62,14 @@ export const Sidebar = ({ role, isOpen = true, onClose }) => {
       {/* Mobile Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-neutral-900/50 z-40 lg:hidden"
+          className="fixed inset-0 bg-neutral-900/50 dark:bg-neutral-950/80 z-40 lg:hidden backdrop-blur-sm"
           onClick={onClose}
         />
       )}
 
       {/* Sidebar */}
       <aside
-        className={`fixed lg:sticky top-16 left-0 h-[calc(100vh-4rem)] w-64 bg-white border-r border-neutral-200 z-40 transition-transform duration-300 overflow-y-auto ${
+        className={`fixed lg:sticky top-16 left-0 h-[calc(100vh-4rem)] w-64 bg-white dark:bg-neutral-900 border-r border-neutral-200 dark:border-neutral-800 z-40 transition-all duration-300 overflow-y-auto ${
           isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
         }`}
       >
@@ -84,8 +84,8 @@ export const Sidebar = ({ role, isOpen = true, onClose }) => {
                 className={({ isActive }) =>
                   `flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 ${
                     isActive
-                      ? 'bg-primary-50 text-primary-700 font-medium shadow-sm'
-                      : 'text-neutral-700 hover:bg-neutral-50'
+                      ? 'bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-400 font-medium shadow-sm'
+                      : 'text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800'
                   }`
                 }
               >
